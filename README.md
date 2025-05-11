@@ -17,10 +17,13 @@ This repository contains a curated collection of array problems and solutions in
 
 ## 🚀 Getting Started
 
-1. Clone the repository: git clone https://github.com/meantaraa/array-problems-solutions.git
+1. Clone the repository:
+    ```bash
+   https://github.com/meantaraa/array-problem-solutions.git
+   ```
    
 
-2. Open in any Java IDE (e.g., IntelliJ IDEA, Eclipse) or compile via terminal:
+3. Open in any Java IDE (e.g., IntelliJ IDEA, Eclipse) or compile via terminal:
    ```bash
    javac YourFileName.java
    java YourFileName

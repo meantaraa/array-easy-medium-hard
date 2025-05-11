@@ -1,4 +1,4 @@
-# Array Problems Solutions
+# Array Problem Solutions
 
 This repository contains a curated collection of array problems and solutions in Java, ranging from **easy** to **hard** levels. It is intended for learning, practice, and improving problem-solving skills, especially for coding interviews and competitive programming.
 

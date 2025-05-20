@@ -91,7 +91,6 @@ public class TwoSumVar1 {
 }
 */
 
-
 /*
 Time Complexity: O(n)
 Space Complexity: O(n)
@@ -144,7 +143,6 @@ public class TwoSumVar1 {
 }
 */
 
-
 /*
 Time Complexity: O(n)
 Space Complexity: O(n)
@@ -154,25 +152,24 @@ import java.util.*;
 
 public class TwoSumVar1 {
 
-    public static void main(String[] args) {  
+    public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the size of the array: ");
         int n = sc.nextInt();
-        
+
         int[] a = new int[n];
 
         System.out.println("Enter the elements of the array: ");
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
 
         System.out.println("Enter the target element: ");
         int target = sc.nextInt();
 
-       System.out.println("The answer is: " + twoSumVar1(a, n, target)); 
-
+        System.out.println("The answer is: " + twoSumVar1(a, n, target));
 
     }
 
@@ -181,27 +178,27 @@ public class TwoSumVar1 {
         Arrays.sort(arr);
 
         int left = 0;
-        int right = n-1;
+        int right = n - 1;
 
-        while(left<right) {
+        while (left < right) {
 
             int sum = arr[left] + arr[right];
 
-            if(sum == k){
+            if (sum == k) {
                 return "YES";
-            }else if(sum < k){
+            } else if (sum < k) {
                 left++;
-            }else{
+            } else {
                 right--;
             }
         }
 
-    return "NO";
-    
+        return "NO";
+
     }
 }
 
 /*
-Time Complexity: O(n)
-Space Complexity: O(1)
-*/
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */

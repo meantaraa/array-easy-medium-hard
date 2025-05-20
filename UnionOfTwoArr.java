@@ -138,7 +138,7 @@ Space Complexity: O(n1 + n2)
 import java.util.*;
 
 public class UnionOfTwoArr {
-     public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter size of first array: ");
@@ -155,7 +155,7 @@ public class UnionOfTwoArr {
         int n2 = sc.nextInt();
 
         int[] b = new int[n2];
-        
+
         System.out.println("Enter elements of second array:");
         for (int i = 0; i < n2; i++) {
             b[i] = sc.nextInt();
@@ -165,15 +165,15 @@ public class UnionOfTwoArr {
 
     }
 
-    public static void unionOfTwoArr(int[] a, int[] b){
+    public static void unionOfTwoArr(int[] a, int[] b) {
 
-        HashSet<Integer> set = new HashSet<> ();
+        HashSet<Integer> set = new HashSet<>();
 
-        for(int i=0; i<a.length; i++){
+        for (int i = 0; i < a.length; i++) {
             set.add(a[i]);
         }
 
-        for(int i=0; i<b.length; i++){
+        for (int i = 0; i < b.length; i++) {
             set.add(b[i]);
         }
 
@@ -185,6 +185,6 @@ public class UnionOfTwoArr {
 }
 
 /*
-Time Complexity: O(n1 + n2) 
-Space Complexity: O(n1 + n2)
-*/
+ * Time Complexity: O(n1 + n2)
+ * Space Complexity: O(n1 + n2)
+ */

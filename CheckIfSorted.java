@@ -35,31 +35,30 @@ public class CheckIfSorted {
 }
 */
 
-
 /* Time Complexity: O(n^2)
    Space Complexity: O(1)
-*/
+ */
 
 import java.util.*;
 
 public class CheckIfSorted {
 
     public static boolean checkIfSorted(int[] arr, int n) {
-        for(int i=0; i<n-1; i++){
-           if(arr[i+1] < arr[i]){
-            return false;
-           }
+        for (int i = 0; i < n - 1; i++) {
+            if (arr[i + 1] < arr[i]) {
+                return false;
+            }
         }
-     return true;
-    } 
-    
+        return true;
+    }
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the number of elements: ");
         int n = sc.nextInt();
-        
+
         int[] a = new int[n];
 
         System.out.println("Enter the elements of the array: ");
@@ -73,7 +72,7 @@ public class CheckIfSorted {
 
 }
 
-
-/* Time Complexity: O(n)
-   Space Complexity: O(1)
-*/
+/*
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */

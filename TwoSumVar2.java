@@ -53,39 +53,38 @@ import java.util.*;
 
 public class TwoSumVar2 {
 
-    public static void main(String[] args) {  
+    public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the size of the array: ");
         int n = sc.nextInt();
-        
+
         int[] a = new int[n];
 
         System.out.println("Enter the elements of the array: ");
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
 
         System.out.println("Enter the target element: ");
         int target = sc.nextInt();
 
-       System.out.println("The answer is: " + Arrays.toString(twoSumVar1(a, n, target))); 
-
+        System.out.println("The answer is: " + Arrays.toString(twoSumVar1(a, n, target)));
 
     }
 
-    public static int[] twoSumVar1(int[] arr, int n, int k){
+    public static int[] twoSumVar1(int[] arr, int n, int k) {
 
         int[] ans = new int[2];
         ans[0] = -1;
-        ans [1] = -1;
+        ans[1] = -1;
 
-        HashMap<Integer, Integer> mpp = new HashMap<> ();
+        HashMap<Integer, Integer> mpp = new HashMap<>();
 
-        for(int i=0; i<n; i++){
-            int rem = k-arr[i];
-            if(mpp.containsKey(rem)) {
+        for (int i = 0; i < n; i++) {
+            int rem = k - arr[i];
+            if (mpp.containsKey(rem)) {
                 ans[0] = mpp.get(rem);
                 ans[1] = i;
             }
@@ -98,6 +97,6 @@ public class TwoSumVar2 {
 }
 
 /*
-Time Complexity: O(n) 
-Space Complexity: O(n)
-*/
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ */
